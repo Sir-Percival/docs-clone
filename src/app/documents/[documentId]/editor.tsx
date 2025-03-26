@@ -8,6 +8,8 @@ import Table from '@tiptap/extension-table';
 import TableCell from '@tiptap/extension-table-cell';
 import TableHeader from '@tiptap/extension-table-header';
 import TableRow from '@tiptap/extension-table-row';
+import Image from '@tiptap/extension-image';
+import ImageResize from 'tiptap-extension-resize-image';
 
 export const Editor = () => {
   const editor = useEditor({
@@ -28,6 +30,8 @@ export const Editor = () => {
       TableRow,
       TableHeader,
       TableCell,
+      Image,
+      ImageResize,
     ],
     content: `
         <table>
